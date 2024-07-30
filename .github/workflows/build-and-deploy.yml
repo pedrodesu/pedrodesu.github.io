@@ -1,21 +1,19 @@
-name: CI
-
-on:
-  push:
-    branches: [ main ]
-  workflow_dispatch:
-
+name: Build and Deploy
+on: [push]
+permissions:
+  contents: write
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
 
       - name: install and build
         run: |
-          npm ci
-          npm run build
+          bun install
+          bun run build
 
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@v4

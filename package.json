@@ -1,17 +1,13 @@
 {
   "name": "portfolio",
-  "homepage": "https://pedrodesu.github.io/",
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview",
-    "predeploy": "bun run build",
-    "deploy": "gh-pages -d dist"
+    "serve": "vite preview"
   },
   "license": "MIT",
   "devDependencies": {
-    "gh-pages": "^6.1.1",
     "solid-devtools": "^0.29.3",
     "ts-standard": "^12.0.2",
     "typescript": "^5.5.4",

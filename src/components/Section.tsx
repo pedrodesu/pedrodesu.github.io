@@ -13,7 +13,7 @@ const Section: ParentComponent<ISectionProps> = (props) => {
   let section!: HTMLElement
 
   onMount(() => {
-    addRef(props.id, section) // TODO could go before onMount?
+    addRef(props.id, section)
 
     new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
@@ -26,7 +26,7 @@ const Section: ParentComponent<ISectionProps> = (props) => {
   })
 
   return (
-    <section ref={section} class={props.class ?? ''}>
+    <section ref={section} class={props.class}>
       {props.children}
     </section>
   )

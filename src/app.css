@@ -1,0 +1,20 @@
+@import '@typehaus/metropolis'; /* TODO eventually import only specific weights */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --color-dark: 24 24 27;
+        --color-darker: 9 9 11;
+    }
+
+    body {
+        @apply font-base font-medium bg-darker text-gray-200;
+    }
+
+    #root {
+        @apply overflow-y-auto h-screen snap-y snap-mandatory;
+    }
+}

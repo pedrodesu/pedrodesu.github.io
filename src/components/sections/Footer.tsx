@@ -44,7 +44,7 @@ const Footer: Component = () => (
       </div>
     </div>
     <div class='container text-zinc-400 text-xl lg:flex lg:items-center whitespace-pre-wrap'>
-      <a class='text-gray-200' href='https://github.com/pedrodesu/portfolio' target='_blank' rel='noreferrer'>
+      <a class='text-gray-200' href='https://github.com/pedrodesu/pedrodesu.github.io' target='_blank' rel='noreferrer'>
         Handcrafted and designed
       </a>
       {' '}with{' '}

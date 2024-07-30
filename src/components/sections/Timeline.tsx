@@ -16,7 +16,7 @@ const ELEMENTS: IElement[] = [
     title: 'portfolio',
     fields: ['TypeScript', 'Solid.js', 'TailwindCSS'],
     time: ['July', 'August 2024'],
-    link: 'https://github.com/pedrodesu/portfolio',
+    link: 'https://github.com/pedrodesu/pedrodesu.github.io',
     description: 'The website you\'re seeing right now :)'
   },
   {

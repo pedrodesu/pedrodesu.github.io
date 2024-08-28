@@ -1,14 +1,13 @@
 import { For, type Component } from 'solid-js'
 import Section from '../Section'
-import { IconArrowRight, IconBrandGithub, IconBrandLinkedin, IconFileCv } from '@tabler/icons-solidjs'
+import { IconArrowRight, IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-solidjs'
 
 const EMAIL = 'me.pedro.ferreira@gmail.com'
 
 const MEDIA = [
   [IconBrandLinkedin, 'https://www.linkedin.com/in/pedronmferreira/'],
-  [IconBrandGithub, 'https://github.com/pedrodesu'],
-  [IconFileCv, '/cv.pdf']
-] as const
+  [IconBrandGithub, 'https://github.com/pedrodesu']
+] satisfies Array<[Component, string]>
 
 const Footer: Component = () => (
   <Section id='footer' class='flex flex-col justify-center space-y-10 lg:space-y-20'>

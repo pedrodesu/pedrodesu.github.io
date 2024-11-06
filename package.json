@@ -1,26 +1,28 @@
 {
-  "name": "portfolio",
+  "name": "example-with-tailwindcss",
+  "type": "module",
   "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "solid-devtools": "^0.29.3",
-    "ts-standard": "^12.0.2",
-    "typescript": "^5.5.4",
-    "vite": "^5.4.2",
-    "vite-plugin-solid": "^2.10.2"
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start"
   },
   "dependencies": {
-    "@tabler/icons-solidjs": "^3.14.0",
+    "@solidjs/router": "^0.15.1",
+    "@solidjs/start": "^1.0.10",
+    "@tabler/icons-solidjs": "^3.21.0",
     "@typehaus/metropolis": "^12.0.0-next.7",
+    "@zag-js/dialog": "^0.77.0",
+    "@zag-js/solid": "^0.77.0",
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.41",
-    "solid-js": "^1.8.22",
-    "tailwindcss": "^3.4.10",
-    "terracotta": "^1.0.5"
+    "postcss": "^8.4.47",
+    "solid-js": "^1.9.3",
+    "tailwindcss": "^3.4.14",
+    "vinxi": "^0.4.3"
+  },
+  "engines": {
+    "bun": ">=1"
+  },
+  "devDependencies": {
+    "ts-standard": "^12.0.2"
   }
 }

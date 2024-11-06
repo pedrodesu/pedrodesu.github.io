@@ -14,7 +14,7 @@
         @apply font-base font-medium bg-darker text-gray-200;
     }
 
-    #root {
+    #app {
         @apply overflow-y-auto h-screen snap-y snap-mandatory;
     }
 }

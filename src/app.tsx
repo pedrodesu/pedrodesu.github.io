@@ -1,5 +1,5 @@
 import { onCleanup, onMount, type Component } from 'solid-js'
-import { clientOnly } from '@solidjs/start'
+import { SectionProvider } from './context/section'
 import About from '~/components/sections/About'
 import Footer from '~/components/sections/Footer'
 import Hero from '~/components/sections/Hero'
@@ -7,8 +7,6 @@ import Timeline from '~/components/sections/Timeline'
 import Scroller from '~/components/Scroller'
 import Menu from '~/components/Menu'
 import '~/app.css'
-
-const SectionProvider = clientOnly(async () => ({ default: (await import('~/context/section')).SectionProvider }))
 
 const App: Component = () => {
   onMount(() => {

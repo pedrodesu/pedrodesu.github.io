@@ -1,28 +1,31 @@
 {
-  "name": "example-with-tailwindcss",
-  "type": "module",
+  "name": "pedrodesu.github.io",
+  "dependencies": {
+    "@solidjs/router": "^0.15.1",
+    "@solidjs/start": "^1.0.10",
+    "@tabler/icons-solidjs": "^3.24.0",
+    "@typehaus/metropolis": "^12.0.0-next.7",
+    "@zag-js/dialog": "^0.77.1",
+    "@zag-js/solid": "^0.77.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "solid-js": "^1.9.3",
+    "tailwindcss": "^3.4.16",
+    "vinxi": "^0.5.1"
+  },
+  "engines": {
+    "bun": ">=1"
+  },
   "scripts": {
     "dev": "vinxi dev",
     "build": "vinxi build",
     "start": "vinxi start"
   },
-  "dependencies": {
-    "@solidjs/router": "^0.15.1",
-    "@solidjs/start": "^1.0.10",
-    "@tabler/icons-solidjs": "^3.21.0",
-    "@typehaus/metropolis": "^12.0.0-next.7",
-    "@zag-js/dialog": "^0.77.0",
-    "@zag-js/solid": "^0.77.0",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
-    "solid-js": "^1.9.3",
-    "tailwindcss": "^3.4.14",
-    "vinxi": "^0.4.3"
-  },
-  "engines": {
-    "bun": ">=1"
-  },
+  "type": "module",
   "devDependencies": {
-    "ts-standard": "^12.0.2"
+    "@eslint/js": "^9.16.0",
+    "@stylistic/eslint-plugin": "^2.12.0",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.0"
   }
 }

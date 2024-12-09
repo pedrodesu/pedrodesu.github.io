@@ -11,19 +11,21 @@ const SectionProvider = clientOnly(async () => ({ default: (await import('~/cont
 
 const Page: Component = () => {
   onMount(() => {
-    function mouseEventPredicate (ev: MouseEvent): void {
-      document.body.style.background = `radial-gradient(300px at ${ev.clientX}px ${ev.clientY}px, rgb(var(--color-dark)), rgb(var(--color-darker)) 100%)`
+    function mouseEventPredicate(ev: MouseEvent): void {
+      document.body.style.background = `radial-gradient(300px at ${ev.clientX.toString()}px ${ev.clientY.toString()}px, rgb(var(--color-dark)), rgb(var(--color-darker)) 100%)`
     }
 
     document.body.addEventListener('mousemove', mouseEventPredicate)
-    onCleanup(() => document.body.removeEventListener('mousemove', mouseEventPredicate))
+    onCleanup(() => {
+      document.body.removeEventListener('mousemove', mouseEventPredicate)
+    })
   })
 
   return (
     <SectionProvider>
       <Menu />
       <Scroller />
-      <main class='*:snap-start *:h-screen'>
+      <main class="*:snap-start *:h-screen">
         <Hero />
         <About />
         <Timeline />

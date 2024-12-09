@@ -18,7 +18,9 @@ export const SectionProvider: ParentComponent = (props) => {
     <SectionContext.Provider value={{
       refs: [refs, (section, ref) => setRefs(refs => new Map([...refs, [section, ref]]))],
       section: [section, setSection],
-      to: (section) => refs().get(section)?.scrollIntoView({ behavior: 'smooth' })
+      to(section) {
+        refs().get(section)?.scrollIntoView({ behavior: 'smooth' })
+      },
     }}
     >
       {props.children}
